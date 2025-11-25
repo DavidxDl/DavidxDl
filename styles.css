@@ -1,8 +1,53 @@
 :root {
   color-scheme: dark;
 }
+@font-face {
+  font-family: Inconsolata;
+  src: url(./Inconsolata/Inconsolata.otf);
+}
 
 canvas {
   box-shadow: 3px 3px 3px black;
   border-radius: 17px;
+}
+
+header {
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  height: 200px;
+  background: black;
+  border-radius: 17px;
+}
+
+body {
+  font-family: Inconsolata;
+  margin-top: 200px;
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 10px;
+  text-transform: capitalize;
+  font-size: 32px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+
+  & > li {
+    cursor: pointer;
+  }
+  & a {
+    text-decoration: none;
+    color: white;
+  }
+
+}
+nav {
+  background: black;
+  border-radius: 0 0 17px 17px;
 }

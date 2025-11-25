@@ -4,7 +4,10 @@ function preload() {
   font = loadFont("./Inconsolata/Inconsolata.otf")
 }
 function setup() {
-  createCanvas(1270, 200);
+  const container = document.getElementById("p5js-container")
+  createCanvas(1280, 200);
+  select("canvas").parent("p5js-container")
+
 
   let points = font.textToPoints("David Elich", 100, 170, 192)
   for (const pt of points) {
